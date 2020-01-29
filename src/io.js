@@ -1,5 +1,6 @@
 const fs = require('fs');
-const filePath = `${process.env.PWD}/src/templates.json`;
+const path = require('path');
+const filePath = path.join(__dirname, 'templates.json');
 
 const readTemplates = (callback) => {
     fs.readFile(filePath, 'utf8', (err, data) => {

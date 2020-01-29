@@ -34,6 +34,7 @@ finished!!!
 - 删除一条模板
 ````
 > omni --delete
+
 > please select template name: 
 > node
 > da
