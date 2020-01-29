@@ -1,5 +1,5 @@
 {
-  "name": "universal-cli",
+  "name": "generic-cli",
   "version": "1.0.1",
   "description": "",
   "main": "cli.js",
