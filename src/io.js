@@ -11,13 +11,22 @@ const readTemplates = (callback) => {
     });
 };
 
-const writeTemplates = (data) => {
+const writeTemplates = (template) => {
     readTemplates((existData) => {
         const exist = { ...existData };
-        exist[data.name] = data.url;
+        exist[template.name] = template.url;
         fs.writeFile(filePath, JSON.stringify(exist), () => { });
+    });
+};
+
+const deleteTemplates = (name) => {
+    readTemplates((data) => {
+        const deleted = { ...data };
+        deleted[name] = undefined;
+        fs.writeFile(filePath, JSON.stringify(deleted), () => { });
     });
 };
 
 exports.readTemplates = readTemplates;
 exports.writeTemplates = writeTemplates;
+exports.deleteTemplates = deleteTemplates;

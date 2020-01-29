@@ -1,16 +1,17 @@
 {
   "name": "omnipotent-cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "cli.js",
   "bin": {
-    "omni-cli": "./bin/cli.js"
+    "omni": "./bin/cli.js"
   },
   "scripts": {
     "help": "chmod 775 ./bin/cli.js && ./bin/cli.js --help",
     "add": "chmod 775 ./bin/cli.js && ./bin/cli.js --add",
     "new": "chmod 775 ./bin/cli.js && ./bin/cli.js --new",
-    "list": "chmod 775 ./bin/cli.js && ./bin/cli.js --list"
+    "list": "chmod 775 ./bin/cli.js && ./bin/cli.js --list",
+    "delete": "chmod 775 ./bin/cli.js && ./bin/cli.js --delete"
   },
   "dependencies": {
     "commander": "^4.1.0",

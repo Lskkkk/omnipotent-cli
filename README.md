@@ -8,23 +8,39 @@
 ## 命令
 - 新增模板
 ````
-> omni-cli --add
+> omni --add
 
 > please input template name: node-ts
 > please input github project repository: Lskkkk/node-ts-template
 ````
 - 根据模板在当前目录下创建项目
 ````
-> omni-cli --new // 
+> omni --new
 
 > please input template name: node-ts
 > please input project name: node-demo
 ......downloading......
 finished!!!
 ````
+- 列出当前模板
+````
+> omni --list
+
+> all templates:
+> - node: dddd
+> - da: gfe
+> - ddd: ddd
+````
+- 删除一条模板
+````
+> omni --delete
+> please select template name: 
+> node
+> da
+````
 - 获取提示
 ````
-> omni-cli --help
+> omni --help
 
 > Options:
   -V, --version  output the version number
@@ -35,4 +51,3 @@ finished!!!
 
 ## Todo
 - npm install
-- omni-cli --delete  

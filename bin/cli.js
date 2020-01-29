@@ -21,7 +21,7 @@ const newTemplate = (choices = []) => inquirer.prompt([
     {
         type: 'list',
         name: 'name',
-        message: 'please input template name:',
+        message: 'please select template name:',
         choices
     },
     {
@@ -31,11 +31,21 @@ const newTemplate = (choices = []) => inquirer.prompt([
     }
 ]);
 
+const deleteTemplate = (choices = []) => inquirer.prompt([
+    {
+        type: 'list',
+        name: 'name',
+        message: 'please select template name:',
+        choices
+    }
+]);
+
 program
     .version('0.0.1')
     .option('-a, --add', 'add new template')
     .option('-n, --new', 'new project by template')
     .option('-l, --list', 'list all templates')
+    .option('-d, --delete', 'delete a template')
     .on('-h, --help', () => { });
 
 program.parse(process.argv);
@@ -62,6 +72,13 @@ if (program.add) {
             lists += `- ${key}: ${templates[key]}\n`;
         }
         console.log(lists);
+    });
+} else if (program.delete) {
+    io.readTemplates(templates => {
+        const templateNames = Object.keys(templates);
+        deleteTemplate(templateNames).then(answer => {
+            io.deleteTemplates(answer.name);
+        });
     });
 } else {
     program.help();
