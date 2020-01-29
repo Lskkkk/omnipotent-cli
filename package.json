@@ -1,10 +1,10 @@
 {
   "name": "universal-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "cli.js",
   "bin": {
-    "universal-cli": "./bin/cli.js"
+    "ge-cli": "./bin/cli.js"
   },
   "scripts": {
     "help": "chmod 775 ./bin/cli.js && ./bin/cli.js --help",
