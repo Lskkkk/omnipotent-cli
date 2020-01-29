@@ -1,21 +1,21 @@
-# uni-cli
+# omnipotent-cli
 
 万能项目初始化工具，需要手动指定个人模板仓库。
 
 ## 安装
-> npm install uni-cli -g
+> npm install omni-cli -g
 
 ## 命令
 - 新增模板
 ````
-> uni-cli --add
+> omni-cli --add
 
 > please input template name: node-ts
 > please input github project repository: Lskkkk/node-ts-template
 ````
 - 根据模板在当前目录下创建项目
 ````
-> uni-cli --new // 
+> omni-cli --new // 
 
 > please input template name: node-ts
 > please input project name: node-demo
@@ -24,7 +24,7 @@ finished!!!
 ````
 - 获取提示
 ````
-> uni-cli --help
+> omni-cli --help
 
 > Options:
   -V, --version  output the version number
@@ -35,5 +35,5 @@ finished!!!
 
 ## Todo
 - npm install  
-- uni-cli --list  
-- uni-cli --delete  
+- omni-cli --list  
+- omni-cli --delete  
