@@ -35,6 +35,7 @@ program
     .version('0.0.1')
     .option('-a, --add', 'add new template')
     .option('-n, --new', 'new project by template')
+    .option('-l, --list', 'list all templates')
     .on('-h, --help', () => { });
 
 program.parse(process.argv);
@@ -54,4 +55,14 @@ if (program.add) {
             }
         });
     });
+} else if (program.list) {
+    io.readTemplates(templates => {
+        let lists = 'all templates: \n';
+        for (let key in templates) {
+            lists += `- ${key}: ${templates[key]}\n`;
+        }
+        console.log(lists);
+    });
+} else {
+    program.help();
 }

@@ -3,7 +3,7 @@
 万能项目初始化工具，需要手动指定个人模板仓库。
 
 ## 安装
-> npm install omni-cli -g
+> npm install omnipotent-cli -g
 
 ## 命令
 - 新增模板
@@ -34,6 +34,5 @@ finished!!!
 ````
 
 ## Todo
-- npm install  
-- omni-cli --list  
+- npm install
 - omni-cli --delete  

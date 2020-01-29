@@ -1,6 +1,6 @@
 {
   "name": "omnipotent-cli",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "",
   "main": "cli.js",
   "bin": {
@@ -9,7 +9,8 @@
   "scripts": {
     "help": "chmod 775 ./bin/cli.js && ./bin/cli.js --help",
     "add": "chmod 775 ./bin/cli.js && ./bin/cli.js --add",
-    "new": "chmod 775 ./bin/cli.js && ./bin/cli.js --new"
+    "new": "chmod 775 ./bin/cli.js && ./bin/cli.js --new",
+    "list": "chmod 775 ./bin/cli.js && ./bin/cli.js --list"
   },
   "dependencies": {
     "commander": "^4.1.0",
