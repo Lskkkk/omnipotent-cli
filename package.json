@@ -1,0 +1,23 @@
+{
+  "name": "uni-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cli.js",
+  "bin": {
+    "uni-cli": "./bin/cli.js"
+  },
+  "scripts": {
+    "help": "chmod 775 ./bin/cli.js && ./bin/cli.js --help",
+    "add": "chmod 775 ./bin/cli.js && ./bin/cli.js --add",
+    "new": "chmod 775 ./bin/cli.js && ./bin/cli.js --new"
+  },
+  "dependencies": {
+    "commander": "^4.1.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.0.4"
+  },
+  "devDependencies": {},
+  "keywords": ["cli"],
+  "author": "lsk0811@163.com",
+  "license": "ISC"
+}
